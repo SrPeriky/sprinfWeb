@@ -1,12 +1,13 @@
 package com.example.demo.models;
 
 public class Usuario {
+    private Long id;
     private String nombre;
     private String apellido;
     private String email;
     private String telefono;
     private String password;
-    
+
     public String getNombre() {
         return nombre;
     }
@@ -36,5 +37,11 @@ public class Usuario {
     }
     public void setPassword(String password) {
         this.password = password;
+    }
+    public Long getId() {
+        return id;
+    }
+    public void setId(long id) {
+        this.id = id;
     }
 }
